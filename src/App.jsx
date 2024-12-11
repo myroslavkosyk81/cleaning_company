@@ -4,7 +4,7 @@
 import './App.css'
 import { Contact } from './components/contact/Contact'
 import Hero from './components/hero/Hero'
-import { Portfolio } from './components/portfolio/Portfolio'
+import Portfolio  from './components/portfolio/Portfolio'
 import Services from './components/services/Services'
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
       <section id='#home'>
         <Hero />
       </section>
-      <section id='#services'>
+      {/* <section id='#services'>
         <Services />
-      </section>
+      </section> */}
       <section id='#portfolio'>
         <Portfolio />
       </section>
