@@ -332,3 +332,32 @@
       height: 40px;
    }
 }
+/* App.css */
+.video-container {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   opacity: 0.3;
+ }
+ 
+ .background-video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Робить відео адаптивним */
+   z-index: -1; /* Відправляє відео на задній план */
+ }
+ 
+ .content {
+   position: relative;
+   z-index: 1; /* Контент знаходиться поверх відео */
+   color: white;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+ 

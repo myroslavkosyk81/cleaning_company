@@ -4,6 +4,7 @@ import Speech from "./Speech";
 import { motion } from "motion/react";
 import Shape from "./Shape";
 import { Suspense } from "react";
+import backgroundVideo from '/video.mp4'; // Імпортуйте відео
 
 const awardVariants = {
    initial: {
@@ -41,13 +42,13 @@ const Hero = () => {
         <motion.h1 initial={{y: -100, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration:3}} className="hTitle">
           Hey There,
           <br />
-          <span>Im Pob</span>
+          <span>I`m LILY</span>
         
         </motion.h1>
         <motion.div variants={awardVariants} initial="initial" animate="animate" className="awards">
-          <motion.h2 variants={awardVariants}>Top rated designer</motion.h2>
+          <motion.h2 variants={awardVariants}>We are TOP rated cleaning company</motion.h2>
           <motion.p variants={awardVariants}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          We clean all you need. And more...
           </motion.p>
           <motion.div variants={awardVariants} className="awardList">
             <motion.img variants={awardVariants} src="/vite.svg" alt="" />
@@ -55,10 +56,10 @@ const Hero = () => {
             <motion.img variants={awardVariants} src="/vite.svg" alt="" />
           </motion.div>
          <motion.div animate={{opacity: [0,1]}} transition={{ duration: 3}} className="certificateSmall">
-          <img src="/certificate.png" alt="" />
+          <img src="/certificate2.png" alt="" />
           Certificate
           <br />
-          Professional
+          of Professional
           <br />
           Cleaning
         </motion.div>
@@ -111,7 +112,7 @@ const Hero = () => {
           <motion.a variants={followVariants} href="/">
             <img src="/instagram.png" alt="" />
           </motion.a>
-          <motion.a variants={followVariants} href="/">
+          <motion.a variants={followVariants} href="https://www.facebook.com/sasha.voytenko.1?locale=uk_UA">
             <img src="/facebook.png" alt="" />
           </motion.a>
           <motion.a variants={followVariants} href="/">
@@ -123,10 +124,10 @@ const Hero = () => {
         </motion.div>
         <Speech />
         <motion.div animate={{opacity: [0,1]}} transition={{ duration: 3}} className="certificate">
-          <img src="/certificate.png" alt="" />
+          <img src="/certificate2.png" alt="" />
           Certificate
           <br />
-          Professional
+          of Professional
           <br />
           Cleaning
         </motion.div>
@@ -172,9 +173,22 @@ const Hero = () => {
           </Suspense>
           
         </Canvas> */}
-         <div className="hImg">
+         {/* <div className="hImg">
             <img src="/hero.png" alt="" />
-         </div>
+         </div> */}
+         <div className="video-container">
+      {/* Відео */}
+      <video autoPlay loop muted className="background-video">
+        <source src={backgroundVideo} type="video/mp4" />
+        Ваш браузер не підтримує відео.
+      </video>
+      
+      {/* Контент */}
+      <div className="content">
+        <h1>Ваш текст</h1>
+        <p>Опис або будь-який інший контент.</p>
+      </div>
+    </div>
       </div>
     </div>
   );

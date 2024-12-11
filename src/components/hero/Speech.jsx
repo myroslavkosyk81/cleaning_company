@@ -10,13 +10,13 @@ const Speech = () => {
             <TypeAnimation
             sequence={[
             // Same substring at the start will only be typed out once, initially
-            'We produce food for Mice',
+            'We clean apartments',
             1000, // wait 1s before replacing "Mice" with "Hamsters"
-            'We produce food for Hamsters',
+            'We clean penthouses',
             1000,
-            'We produce food for Guinea Pigs',
+            'We clean offices',
             1000,
-            'We produce food for Chinchillas',
+            'We clean mansions',
             1000
             ]}
             wrapper="span"
