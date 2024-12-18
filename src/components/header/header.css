@@ -1,0 +1,16 @@
+.header{
+   width: 100%;
+   /* background-color: bisque; */
+   display: flex;
+   position: absolute;
+   justify-content: center;
+}
+
+.listLinks{
+   
+}
+.links{
+   color: rgb(171, 152, 236);
+   gap: 10px;
+   margin: 20px;
+}

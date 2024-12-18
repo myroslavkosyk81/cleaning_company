@@ -3,6 +3,9 @@
    overflow: hidden;
    display: flex;
 }
+.header{
+   height: 10%;
+}
 
 .bg{
    position: absolute;
@@ -39,7 +42,7 @@
 
 .hTitle{
    margin-top: 50px;
-   font-size: 60px;
+   font-size: 100px;
    color: rgb(101, 185, 93);
 }
 .hTitle span{

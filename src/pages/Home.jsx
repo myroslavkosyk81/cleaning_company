@@ -1,70 +1,92 @@
 import { Canvas } from "@react-three/fiber";
-import "./hero.css";
-import Speech from "./Speech";
+import "./home.css";
+import Speech from "../components/home/Speech";
 import { motion } from "motion/react";
-import Shape from "./Shape";
+// import Shape from "../components/hero/Shape";
 import { Suspense } from "react";
-import backgroundVideo from '/video.mp4'; // Імпортуйте відео
+import backgroundVideo from "/video.mp4"; // Імпортуйте відео
+import Header from "../components/header/Header";
 
 const awardVariants = {
-   initial: {
-      x: -100,
-      opacity: 0,
-   },
-   animate: {
-      x: -0,
-      opacity: 1,
-      transition: {
-         duration: 1.1,
-         staggerChildren: 0.7,
-      },
-   },
-}
+  initial: {
+    x: -100,
+    opacity: 0,
+  },
+  animate: {
+    x: -0,
+    opacity: 1,
+    transition: {
+      duration: 1.1,
+      staggerChildren: 0.7,
+    },
+  },
+};
 const followVariants = {
-   initial: {
-      y: -100,
-      opacity: 0,
-   },
-   animate: {
-      y: -0,
-      opacity: 1,
-      transition: {
-         duration: 1.1,
-         staggerChildren: 0.7,
-      },
-   },
-}
+  initial: {
+    y: -100,
+    opacity: 0,
+  },
+  animate: {
+    y: -0,
+    opacity: 1,
+    transition: {
+      duration: 1.1,
+      staggerChildren: 0.7,
+    },
+  },
+};
 
-const Hero = () => {
+const Home = () => {
   return (
     <div className="hero">
+      <Header className="header"></Header>
       <div className="hSection left">
-        <motion.h1 initial={{y: -100, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration:3}} className="hTitle">
+        <motion.h1
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 3 }}
+          className="hTitle"
+        >
           Hey There,
           <br />
           <span>I`m LILY</span>
-        
         </motion.h1>
-        <motion.div variants={awardVariants} initial="initial" animate="animate" className="awards">
-          <motion.h2 variants={awardVariants}>We are TOP rated cleaning company</motion.h2>
+        <motion.div
+          variants={awardVariants}
+          initial="initial"
+          animate="animate"
+          className="awards"
+        >
+          <motion.h2 variants={awardVariants}>
+            We are TOP rated cleaning company
+          </motion.h2>
           <motion.p variants={awardVariants}>
-          We clean all you need. And more...
+            We clean all you need. And more...
           </motion.p>
           <motion.div variants={awardVariants} className="awardList">
             <motion.img variants={awardVariants} src="/vite.svg" alt="" />
             <motion.img variants={awardVariants} src="/vite.svg" alt="" />
             <motion.img variants={awardVariants} src="/vite.svg" alt="" />
           </motion.div>
-         <motion.div animate={{opacity: [0,1]}} transition={{ duration: 3}} className="certificateSmall">
-          <img src="/certificate2.png" alt="" />
-          Certificate
-          <br />
-          of Professional
-          <br />
-          Cleaning
+          <motion.div
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 3 }}
+            className="certificateSmall"
+          >
+            <img src="/certificate2.png" alt="" />
+            Certificate
+            <br />
+            of Professional
+            <br />
+            Cleaning
+          </motion.div>
         </motion.div>
-        </motion.div>
-        <motion.a animate={{y: [0, 10], opacity: [0,1,0]}} transition={{repeat: Infinity, duration: 2, ease: 'easeInOut'}} href="#services" className="scroll">
+        <motion.a
+          animate={{ y: [0, 10], opacity: [0, 1, 0] }}
+          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+          href="#services"
+          className="scroll"
+        >
           <svg
             width="50px"
             height="50px"
@@ -92,27 +114,43 @@ const Hero = () => {
           </svg>
         </motion.a>
       </div>
-      
-      <motion.div variants={followVariants} initial='initial' animate='animate' className="followSmall">
-          <motion.a variants={followVariants} href="/">
-            <img src="/instagram.png" alt="" />
-          </motion.a>
-          <motion.a variants={followVariants} href="/">
-            <img src="/facebook.png" alt="" />
-          </motion.a>
-          <motion.a variants={followVariants} href="/">
-            <img src="/youtube.png" alt="" />
-          </motion.a>
-          <motion.div variants={followVariants} className="followSmallTextContainer">
-            <div className="followSmallText">Follow us</div>
-          </motion.div>
+
+      <motion.div
+        variants={followVariants}
+        initial="initial"
+        animate="animate"
+        className="followSmall"
+      >
+        <motion.a variants={followVariants} href="/">
+          <img src="/instagram.png" alt="" />
+        </motion.a>
+        <motion.a variants={followVariants} href="/">
+          <img src="/facebook.png" alt="" />
+        </motion.a>
+        <motion.a variants={followVariants} href="/">
+          <img src="/youtube.png" alt="" />
+        </motion.a>
+        <motion.div
+          variants={followVariants}
+          className="followSmallTextContainer"
+        >
+          <div className="followSmallText">Follow us</div>
         </motion.div>
+      </motion.div>
       <div className="hSection right">
-        <motion.div variants={followVariants} initial='initial' animate='animate' className="follow">
+        <motion.div
+          variants={followVariants}
+          initial="initial"
+          animate="animate"
+          className="follow"
+        >
           <motion.a variants={followVariants} href="/">
             <img src="/instagram.png" alt="" />
           </motion.a>
-          <motion.a variants={followVariants} href="https://www.facebook.com/sasha.voytenko.1?locale=uk_UA">
+          <motion.a
+            variants={followVariants}
+            href="https://www.facebook.com/sasha.voytenko.1?locale=uk_UA"
+          >
             <img src="/facebook.png" alt="" />
           </motion.a>
           <motion.a variants={followVariants} href="/">
@@ -123,7 +161,11 @@ const Hero = () => {
           </motion.div>
         </motion.div>
         <Speech />
-        <motion.div animate={{opacity: [0,1]}} transition={{ duration: 3}} className="certificate">
+        <motion.div
+          animate={{ opacity: [0, 1] }}
+          transition={{ duration: 3 }}
+          className="certificate"
+        >
           <img src="/certificate2.png" alt="" />
           Certificate
           <br />
@@ -131,8 +173,17 @@ const Hero = () => {
           <br />
           Cleaning
         </motion.div>
-        <motion.a href="/#contact" className="contactLink" animate={{x: [200,0], opacity: [0,1]}} transition={{ duration: 3}}>
-          <motion.div className="contactButton" animate={{rotate: [0, 360]}} transition={{ duration: 10, repeat: Infinity, ease: 'linear'}}>
+        <motion.a
+          href="/#contact"
+          className="contactLink"
+          animate={{ x: [200, 0], opacity: [0, 1] }}
+          transition={{ duration: 3 }}
+        >
+          <motion.div
+            className="contactButton"
+            animate={{ rotate: [0, 360] }}
+            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+          >
             <svg viewBox="0 0 200 200" width="150" height="150">
               <circle cx="100" cy="100" r="90" fill="pink" />
               <path
@@ -173,24 +224,24 @@ const Hero = () => {
           </Suspense>
           
         </Canvas> */}
-         {/* <div className="hImg">
+        {/* <div className="hImg">
             <img src="/hero.png" alt="" />
          </div> */}
-         <div className="video-container">
-      {/* Відео */}
-      <video autoPlay loop muted className="background-video">
-        <source src={backgroundVideo} type="video/mp4" />
-        Ваш браузер не підтримує відео.
-      </video>
-      
-      {/* Контент */}
-      <div className="content">
-        {/* <h1>Ваш текст</h1>
+        <div className="video-container">
+          {/* Відео */}
+          <video autoPlay loop muted className="background-video">
+            <source src={backgroundVideo} type="video/mp4" />
+            Ваш браузер не підтримує відео.
+          </video>
+
+          {/* Контент */}
+          <div className="content">
+            {/* <h1>Ваш текстxdscdscddcdc</h1>
         <p>Опис або будь-який інший контент.</p> */}
-      </div>
-    </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
-export default Hero;
+export default Home;

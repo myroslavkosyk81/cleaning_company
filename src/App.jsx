@@ -1,31 +1,42 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import { Contact } from './components/contact/Contact'
-import Hero from './components/hero/Hero'
-import Portfolio  from './components/portfolio/Portfolio'
+import Home from './pages/Home'
+import Portfolio  from './pages/Portfolio'
 import Services from './components/services/Services'
+import Portfolio2 from './pages/Portfolio2';
 
 function App() {
   // const [count, setCount] = useState(0)
 
-  return (
-    <div className='container'>
-      <section id='#home'>
-        <Hero />
-      </section>
-      {/* <section id='#services'>
-        <Services />
-      </section> */}
-      <section id='#portfolio'>
-        <Portfolio />
-      </section>
-      <section id='#contact'>
-        <Contact />
-      </section>
+  // return (
+    return <BrowserRouter>
+  {/* <Header /> */}
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/portfolio" element={<Portfolio />} />
+    <Route path="/portfolio2" element={<Portfolio2 />} />
+  </Routes>
+  {/* <Footer /> */}
+  </BrowserRouter>
+    // <div className='container'>
+    //   <section id='#home'>
+    //     <Hero />
+    //   </section>
+    //   {/* <section id='#services'>
+    //     <Services />
+    //   </section> */}
+    //   {/* <section id='#portfolio'> */}
+    //     <Portfolio />
+    //   {/* </section> */}
+    //   <section id='#contact'>
+    //     <Contact />
+    //   </section>
      
-    </div>
+    // </div>
 
     // <>
     //   <div>
@@ -49,7 +60,7 @@ function App() {
     //     Click on the Vite and React logos to learn more
     //   </p>
     // </>
-  )
+  // )
 }
 
 export default App
