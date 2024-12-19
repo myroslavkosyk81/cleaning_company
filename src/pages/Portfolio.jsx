@@ -39,6 +39,13 @@ const items = [
     desc: "Imagine coming home to a completely clean, fresh-smelling home after a long day of work. You didn't have to lift a finger, dust a surface, or plug in a single vacuum to get it that way. It gives us all a wonderful feeling. We has been cleaning and energizing homes for 10 years.",
     link: "/",
   },
+  {
+    id: 6,
+    img: "/c6.jpg",
+    title: "Office Cleaning Services",
+    desc: "Our office cleaning services offer comprehensive solutions, including daily cleaning, dusting, vacuuming, restroom sanitation, window washing, and waste management. We provide customized plans to maintain a clean, healthy, and professional environment, boosting productivity and ensuring employee satisfaction.",
+    link: "/",
+  },
 ];
 
 const imgVariants = {
@@ -105,9 +112,9 @@ const ListItem = ({ item }) => {
     <div className="pText">
       <h1>{item.title}</h1>
       <p>{item.desc}</p>
-      <a href={item.link}>
+      {/* <a href={item.link}>
         <button>View Project</button>
-      </a>
+      </a> */}
     </div>
   </div>
   )

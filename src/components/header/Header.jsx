@@ -15,6 +15,9 @@ const Header = () => {
         <Link className='links' to='/portfolio2'>
           Portfolio2
         </Link>
+        <Link className='links' to='/portfolio3'>
+          Portfolio3
+        </Link>
       </div>
       
    </div>

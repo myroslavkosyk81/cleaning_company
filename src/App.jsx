@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Portfolio  from './pages/Portfolio'
 import Services from './components/services/Services'
 import Portfolio2 from './pages/Portfolio2';
+import Portfolio3 from './pages/Portfolio3';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/portfolio" element={<Portfolio />} />
     <Route path="/portfolio2" element={<Portfolio2 />} />
+    <Route path="/portfolio3" element={<Portfolio3 />} />
   </Routes>
   {/* <Footer /> */}
   </BrowserRouter>

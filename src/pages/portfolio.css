@@ -55,6 +55,7 @@
    display: flex;
    flex-direction: column;
    gap: 24px;
+   color: rgb(59, 77, 77);
 }
 
 .pText h1 {
@@ -72,4 +73,48 @@
    border: none;
    font-weight: 500;
    cursor: pointer;
+}
+@media (max-width:1536px){
+   
+}
+@media (max-width:1280px){
+   .pText h1 {
+      font-size: 50px;
+   }
+   
+}
+
+@media (max-width:1024px){
+   .pImg{
+      width: 60%;
+   }
+   .pText{
+      width: 60%;
+   }
+  .pItem{
+   flex-direction: column;
+   gap: 20px;
+  }
+   .pText h1{
+      font-size: 40px;
+      text-align: center;
+   }
+  
+}
+@media (max-width:768px){
+   .pImg{
+      width: 70%;
+   }
+   .pText{
+      width: 70%;
+   }
+   .pItem{
+      flex-direction: column;
+      gap: 10px;
+     }
+   .pText h1{
+      font-size: 30px;
+      text-align: center;
+   }
+   
 }
