@@ -106,10 +106,16 @@
  @media (max-width:768px){
    .card-container {
       
-      width: 60%;
+      width: 85%;
       height: 70%;
       
       padding: 12px;
+    }
+    .image-block {
+      
+      /* top: -10%; */
+      left: -5%; /* Зміщення блоку вліво */
+   
     }
    .info-block {
       
