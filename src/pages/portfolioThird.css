@@ -103,7 +103,12 @@
       font-size: 1rem;
     }
  }
- @media (max-width:768px){
+ /* @media screen and (max-width:768px),(orientation: landscape) */
+ /* @media screen and (max-width: 768px), 
+       screen and (max-height: 700px)  */
+       @media screen and (orientation: landscape) and (max-width: 768px)
+{
+
    .card-container {
       
       width: 85%;
@@ -128,6 +133,54 @@
    .description {
       margin: 10px 0;
       font-size: 0.9rem;
+    }
+ }
+ /* @media screen and (max-width:768px),(orientation: portrait)  */
+ /* @media screen and (max-width: 430px), 
+       screen and (max-height: 432px)  */
+       @media screen and (orientation: portrait) and (max-width: 768px)
+       {
+ 
+   .card-container {
+      
+      width: 85%;
+      height: 70%;
+      
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      top: 10%;
+    }
+    .image-block {
+      all: unset;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: -20%;
+      /* left: 0%;  */
+      z-index: 10; /* Накладання фото */
+      width: 80%;
+      height: 70%;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .info-block {
+      all: unset;
+      text-align: center;
+      padding: 20px;
+      
+    }
+   .name {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+   .description {
+      margin: 1px 0;
+      font-size: 0.9rem;
+      text-align: left;
     }
  }
  

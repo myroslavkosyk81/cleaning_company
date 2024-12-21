@@ -86,16 +86,16 @@ const Portfolio2 = () => {
       {items.map((item, index) => (
         <div className="mainContainer">
           <div className="card-container">
-          <div className="image-block">
-            <div
-              className="profile-image"
-              id={`item-${index}`}
-              key={item.id}
-              style={{
-                background: `url(${item.img}) no-repeat center center/cover`,
-              }}
-            ></div>
-          </div>
+            <div className="image-block">
+              <div
+                className="profile-image"
+                id={`item-${index}`}
+                key={item.id}
+                style={{
+                  background: `url(${item.img}) no-repeat center center/cover`,
+                }}
+              ></div>
+            </div>
             <div className="info-block">
               <h1 className="name">{item.title}</h1>
               <p className="description">{item.desc}</p>
@@ -105,8 +105,6 @@ const Portfolio2 = () => {
             </div>
           </div>
         </div>
-        
-        
       ))}
     </div>
   );
