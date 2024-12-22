@@ -63,11 +63,11 @@ const Home = () => {
           <motion.p variants={awardVariants}>
             We clean all you need. And more...
           </motion.p>
-          <motion.div variants={awardVariants} className="awardList">
+          {/* <motion.div variants={awardVariants} className="awardList">
             <motion.img variants={awardVariants} src="/vite.svg" alt="" />
             <motion.img variants={awardVariants} src="/vite.svg" alt="" />
             <motion.img variants={awardVariants} src="/vite.svg" alt="" />
-          </motion.div>
+          </motion.div> */}
           <motion.div
             animate={{ opacity: [0, 1] }}
             transition={{ duration: 3 }}
