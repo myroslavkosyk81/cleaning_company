@@ -79,7 +79,7 @@
    }
    .textContainer h1{
     
-      font-size: 38px;
+      font-size: 36px;
     }
 }
 @media (max-width:768px){
@@ -96,5 +96,13 @@
       padding: 30px 20px 30px 20px;
       align-items: center;
    }
+   .textContainer h1{
+    
+      font-size: 36px;
+    }
+    .textContainer p{
+       width: 80%;
+       font-size: 20px;
+    }
    
 }
