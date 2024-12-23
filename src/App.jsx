@@ -6,7 +6,6 @@ import './App.css'
 import { Contact } from './components/contact/Contact'
 import Home from './pages/Home'
 import House  from './pages/House'
-
 import Apartment from './pages/Apartment';
 import Office from './pages/Office';
 

@@ -37,16 +37,19 @@ const Header = () => {
 
       <ul className={`menu ${isOpen ? "open" : ""}`}>
         <Link className='links' to='/'>
-        <li onClick={closeMenu}>Home</li>
+          <li onClick={closeMenu}>Home</li>
         </Link>
         <Link className='links' to='/house'>
-        <li onClick={closeMenu}>House</li>
+          <li onClick={closeMenu}>House</li>
         </Link>
         <Link className='links' to='/apartment'>
-        <li onClick={closeMenu}>Apartment</li>
+          <li onClick={closeMenu}>Apartment</li>
         </Link>
         <Link className='links' to='/office'>
-        <li onClick={closeMenu}>Office</li>
+          <li onClick={closeMenu}>Office</li>
+        </Link>
+        <Link className='links' to='/contacts'>
+          <li onClick={closeMenu}>Contact Us</li>
         </Link>
         </ul>
         {/* Скляний фон для мобільного меню */}

@@ -3,12 +3,12 @@
    height: 100%;
    flex-direction: column;
 }
-.header{
+/* .header{
    top: 15px;
    height: fit-content;
    position: fixed;
    z-index: 2;
-}
+} */
 
 .backgroundImg{
    height: 100vh;

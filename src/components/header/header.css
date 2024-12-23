@@ -96,7 +96,7 @@
    /* Приховуємо меню за замовчуванням */
    .menu {
      position: absolute;
-     top: 60px;
+     top: 44px;
      right: 10px;
      flex-direction: column;
      width: fit-content;

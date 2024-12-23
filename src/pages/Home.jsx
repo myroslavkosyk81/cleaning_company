@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { Suspense } from "react";
 import backgroundVideo from "/video.mp4"; // Імпортуйте відео
 import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 
 const awardVariants = {
   initial: {
@@ -241,6 +242,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      
+        <Footer className="footer"></Footer>
+      
+      
     </div>
   );
 };
