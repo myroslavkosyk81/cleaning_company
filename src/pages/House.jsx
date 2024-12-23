@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
-import "./portfolio.css";
+import "./house.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import Header from "../components/header/Header";
 
 const items = [
   {
     id: 1,
-    img: "/c1.jpg",
-    title: "Apartment Cleaning Services",
+    img: "/house1.jpg",
+    title: "Spend Time with Your Family & Leave the Chores to Us",
     desc: "Our house cleaning services aren’t only for houses! Every living space deserves a thorough cleaning that you can see and feel. We are proud to offer a program designed to serve residents of apartments, condominiums, and other small spaces.",
     link: "/",
   },
   {
     id: 2,
-    img: "/c2.jpg",
+    img: "/house2.webp",
     title: "Holiday Cleaning Services to Cheer About",
     desc: "When the holidays approach, will your home be ready for guests? Amid all the joy and celebration, holiday cleaning can add stress and put a serious damper on the festivities. Who wants to scrub floors and toilets when there are parties to plan? Don't let the burden of seasonal cleaning cast a shadow over the holidays.",
     link: "/",
@@ -34,16 +34,9 @@ const items = [
   },
   {
     id: 5,
-    img: "/c5.jpg",
+    img: "/house3.png",
     title: "House Cleaning Services",
     desc: "Imagine coming home to a completely clean, fresh-smelling home after a long day of work. You didn't have to lift a finger, dust a surface, or plug in a single vacuum to get it that way. It gives us all a wonderful feeling. We has been cleaning and energizing homes for 10 years.",
-    link: "/",
-  },
-  {
-    id: 6,
-    img: "/c6.jpg",
-    title: "Office Cleaning Services",
-    desc: "Our office cleaning services offer comprehensive solutions, including daily cleaning, dusting, vacuuming, restroom sanitation, window washing, and waste management. We provide customized plans to maintain a clean, healthy, and professional environment, boosting productivity and ensuring employee satisfaction.",
     link: "/",
   },
 ];
@@ -83,7 +76,7 @@ const textVariants = {
   },
 };
 
-const Portfolio = () => {
+const House = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Обробка прокрутки
@@ -122,7 +115,7 @@ const ListItem = ({ item }) => {
 
 
   return (
-    <div className="portfolio" style={{ height: `${items.length * 100}vh` }}>
+    <div className="house" style={{ height: `${items.length * 100}vh` }}>
       <Header className='header'></Header>
       {items.map((item, index) => (
         <div className="pList" 
@@ -144,7 +137,7 @@ const ListItem = ({ item }) => {
   );
 };
 
-export default Portfolio;
+export default House;
 
 // const ListItem = ({ item }) => {
 //   return (

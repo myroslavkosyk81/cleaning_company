@@ -1,5 +1,5 @@
 /* Card.css */
-.portfolio{
+.office{
    display: flex;
    height: 100%;
    flex-direction: column;
@@ -135,9 +135,6 @@
       font-size: 0.9rem;
     }
  }
- /* @media screen and (max-width:768px),(orientation: portrait)  */
- /* @media screen and (max-width: 430px), 
-       screen and (max-height: 432px)  */
        @media screen and (orientation: portrait) and (max-width: 768px)
        {
  

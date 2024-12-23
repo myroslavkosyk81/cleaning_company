@@ -1,4 +1,4 @@
-.portfolio{
+.house{
    height: 600vh;
    /* position: relative; */
    display: flex;
@@ -40,6 +40,7 @@
 
 .pImg {
    width: 40%;
+   height: 60%;
    border-radius: 20px;
    overflow: hidden;
 }

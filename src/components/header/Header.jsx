@@ -39,14 +39,14 @@ const Header = () => {
         <Link className='links' to='/'>
         <li onClick={closeMenu}>Home</li>
         </Link>
-        <Link className='links' to='/portfolio'>
-        <li onClick={closeMenu}>Portfolio</li>
+        <Link className='links' to='/house'>
+        <li onClick={closeMenu}>House</li>
         </Link>
-        <Link className='links' to='/portfolio2'>
-        <li onClick={closeMenu}>Portfolio2</li>
+        <Link className='links' to='/apartment'>
+        <li onClick={closeMenu}>Apartment</li>
         </Link>
-        <Link className='links' to='/portfolio3'>
-        <li onClick={closeMenu}>Portfolio3</li>
+        <Link className='links' to='/office'>
+        <li onClick={closeMenu}>Office</li>
         </Link>
         </ul>
         {/* Скляний фон для мобільного меню */}
