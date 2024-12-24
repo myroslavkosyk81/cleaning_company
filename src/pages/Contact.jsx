@@ -67,7 +67,7 @@ const Contact = () => {
           <motion.h1 variants={listVariant} className="cTitle">
             Let's keep in touch
             <p>
-               Send us an email or call +17806557596
+            Send us an email or call: +17806557596
             </p>
           </motion.h1>
           <motion.div variants={listVariant} className="formItem">

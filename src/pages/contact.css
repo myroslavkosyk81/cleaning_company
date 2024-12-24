@@ -17,7 +17,7 @@
  }
  
  .cSection:last-child {
-   background-color: rgba(2, 2, 45, 0.187);
+   background-color: rgba(33, 33, 233, 0.187);
    margin: 50px 0px;
    padding: 50px;
    border-radius: 50% 0px;
@@ -28,7 +28,7 @@
    display: flex;
    flex-direction: column;
    gap: 20px;
-   background-color: rgba(2, 2, 45, 0.066);
+   background-color: rgba(129, 129, 194, 0.066);
    padding: 50px;
    border-radius: 50px;
  }
@@ -86,4 +86,12 @@
    .cSection:last-child {
      height: 30%;
    }
+   form {
+      gap: 10px;
+      padding: 20px;
+      
+    }
+    form h1{
+      font-size: 25px;
+    }
  }
