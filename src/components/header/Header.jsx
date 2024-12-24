@@ -48,7 +48,7 @@ const Header = () => {
         <Link className='links' to='/office'>
           <li onClick={closeMenu}>Office</li>
         </Link>
-        <Link className='links' to='/contacts'>
+        <Link className='links' to='/contact'>
           <li onClick={closeMenu}>Contact Us</li>
         </Link>
         </ul>

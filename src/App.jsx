@@ -3,15 +3,15 @@
 // import viteLogo from '/vite.svg'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
-import { Contact } from './components/contact/Contact'
+// import { Contact } from './components/contact/Contact'
 import Home from './pages/Home'
 import House  from './pages/House'
 import Apartment from './pages/Apartment';
 import Office from './pages/Office';
+import Contact from './pages/Contact';
 
 function App() {
   // const [count, setCount] = useState(0)
-
   // return (
     return <BrowserRouter>
   {/* <Header /> */}
@@ -20,6 +20,7 @@ function App() {
     <Route path="/house" element={<House />} />
     <Route path="/apartment" element={<Apartment />} />
     <Route path="/office" element={<Office />} />
+    <Route path="/contact" element={<Contact />} />
   </Routes>
   {/* <Footer /> */}
   </BrowserRouter>
