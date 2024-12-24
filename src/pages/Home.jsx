@@ -175,7 +175,7 @@ const Home = () => {
           Cleaning
         </motion.div>
         <motion.a
-          href="/#contact"
+          href="/contact"
           className="contactLink"
           animate={{ x: [200, 0], opacity: [0, 1] }}
           transition={{ duration: 3 }}
@@ -184,6 +184,7 @@ const Home = () => {
             className="contactButton"
             animate={{ rotate: [0, 360] }}
             transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+            whileHover={{ rotate: 'none' }}
           >
             <svg viewBox="0 0 200 200" width="150" height="150">
               <circle cx="100" cy="100" r="90" fill="pink" />

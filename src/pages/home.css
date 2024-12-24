@@ -171,6 +171,10 @@
 .contactButton{
    position: relative;
 }
+.contactButton:hover{
+   position: relative;
+   rotate: 0deg;
+}
 .circleText{
    letter-spacing: 3px;
    font-size: 20px;
